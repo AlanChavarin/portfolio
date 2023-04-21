@@ -1,0 +1,28 @@
+.parent{
+    margin-top: 50px;
+    padding: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hello{
+    text-align: center;
+    font-size: 40px;
+}
+
+.hello > * {
+    font-size: 40px;
+}
+
+.highlight{
+    color: var(--highlight);
+}
+
+.logoContainer{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}

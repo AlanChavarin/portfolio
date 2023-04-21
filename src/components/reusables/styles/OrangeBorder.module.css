@@ -1,0 +1,35 @@
+.topLine{
+    border: 1px solid var(--highlight);
+    width: 150px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.leftLine{
+    border: 1px solid var(--highlight);
+    height: 100px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.bottomLine{
+    border: 1px solid var(--highlight);
+    width: 150px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.rightLine{
+    border: 1px solid var(--highlight);
+    height: 100px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.rightLine, .bottomLine, .leftLine, .topLine{
+    box-shadow: 4px 4px 6px black;
+}

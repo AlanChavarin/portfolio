@@ -1,0 +1,26 @@
+.stackContainer{
+   display: flex;
+   flex-direction: column; 
+   gap: 50px;
+}
+
+.stackContainer > div{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.stackContainer > div :nth-child(1){
+    height: 70px;
+    width: 70px;
+}
+
+.nameDesc :nth-child(1){
+    font-size: 40px;
+    white-space: nowrap;
+}
+
+.nameDesc :nth-child(2){
+    font-size: 17px;
+    white-space: nowrap;
+}

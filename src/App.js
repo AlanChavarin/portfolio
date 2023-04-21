@@ -1,24 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+//layout
+import Navbar from "./components/layout/Navbar"
+import Footer from "./components/layout/Footer"
+
+//pages
+import Home from "./components/pages/Home"
+import About from "./components/pages/About"
+import TechStack from "./components/pages/TechStack"
+import Portfolio from "./components/pages/Portfolio"
+import Contact from "./components/pages/Contact"
+import EyeOfOphidiaGallery from "./components/reusables/EyeOfOphidiaGallery"
+
+//react
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
+
 
 function App() {
+
+  const onScrollTo = (element) => { 
+    document.getElementById(element).scrollIntoView({behavior: "smooth", block: 'center'})
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router >
+      <div className="App">
+            <Routes>
+              <Route path='/' element={<>
+              <Navbar onScrollTo={onScrollTo}/>
+                <div className="PageContainer">
+                  <Home/>
+                  <About/>
+                  <TechStack/>
+                  <Portfolio/>
+                  <Contact />
+                </div></>
+              }/>
+              <Route path='/gallery' element={<EyeOfOphidiaGallery page={true} />}/>
+            </Routes>
+      </div>
+    </Router>
   );
 }
 
