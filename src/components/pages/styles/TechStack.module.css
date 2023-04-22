@@ -1,3 +1,10 @@
+.parent{
+    display: flex;
+    gap: 60px;
+    padding: 60px;
+    max-width: 1000px;
+}
+
 .stackContainer{
    display: flex;
    flex-direction: column; 
@@ -10,7 +17,7 @@
     align-items: center;
 }
 
-.stackContainer > div :nth-child(1){
+.img{
     height: 70px;
     width: 70px;
 }
@@ -23,4 +30,61 @@
 .nameDesc :nth-child(2){
     font-size: 17px;
     white-space: nowrap;
+}
+
+@media(width < 1070px){
+    .parent{
+        gap: 20px;
+        padding: 50px;
+    }
+
+    .h1{
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .nameDesc div:nth-child(1){
+        font-size: 20px;
+    }
+
+    .nameDesc div:nth-child(2){
+        font-size: 15px;
+    }
+
+    .img{
+        height: 45px;
+        width: 45px;
+    }
+
+    .stackContainer > div{
+        gap: 15px;
+    }
+}
+
+@media(width < 770px){
+    .parent{
+        flex-direction: column;
+    }
+}
+
+@media(width < 400px){
+    .parent{
+        padding: 0px;
+    }
+
+    .h1{
+        font-size: 20px;
+    }
+
+    .nameDesc div:nth-child(1){
+        font-size: 17px;
+    }
+
+    .nameDesc div:nth-child(2){
+        font-size: 12px;
+    }
+
+
+
+
 }

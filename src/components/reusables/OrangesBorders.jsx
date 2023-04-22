@@ -7,6 +7,7 @@ function OrangeBorders() {
       <div className={OrangeBordersCSS.leftLine}></div>
       <div className={OrangeBordersCSS.bottomLine}></div>
       <div className={OrangeBordersCSS.rightLine}></div>
+      <div className={OrangeBordersCSS.simpleLine}></div>
     </>
   )
 }

@@ -1,6 +1,5 @@
 .parent{
     margin-top: 50px;
-    padding: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -25,4 +24,91 @@
     display: flex;
     align-items: center;
     gap: 30px;
+    justify-content: center;
 }
+
+.nameBreak{
+    display: none;
+}
+
+@media(width < 940px){
+    .parent p:nth-child(2){
+        max-width: 500px;
+        text-align: center;
+    }
+}
+
+@media(width < 730px){
+    .parent p:nth-child(1){
+        max-width: 400px;
+    }
+
+    .nameBreak{
+        display: block;
+    }
+}
+
+@media(width < 680px){
+    .logoContainer{
+        width: 450px;
+        flex-wrap: wrap;
+    }
+}
+
+@media(width < 520px){
+    .parent p:nth-child(1){
+        font-size: 25px;
+    }
+
+    .parent p:nth-child(1) > *{
+        font-size: 25px;
+    }
+
+    .parent p:nth-child(2){
+        font-size: 20px;
+    }
+
+    .parent p:nth-child(2) > *{
+        font-size: 20px;
+    }
+
+    .logoContainer{
+        width: 360px;
+    }
+}
+
+@media(width < 400px){
+    .logoContainer{
+        gap: 30px;
+        
+    }
+
+    .logoContainer img:nth-child(1){
+        width: 50px;
+    }
+
+    .logoContainer img:nth-child(2){
+        width: 60px;
+    }
+
+    .logoContainer img:nth-child(3){
+        width: 35px;
+    }
+
+    .logoContainer img:nth-child(4){
+        width: 50px;
+    }
+
+    .logoContainer img:nth-child(5){
+        width: 50px;
+    }
+
+    .logoContainer img:nth-child(6){
+        width: 50px;
+    }
+
+    .logoContainer img:nth-child(7){
+        width: 50px;
+    }
+}
+

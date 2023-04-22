@@ -11,11 +11,9 @@ function Portfolio() {
         <h1 style={{textAlign: 'center'}}>{'<'} Portfolio {'/>'}</h1>
         <div className={PortfolioCSS.container}>
             <div>
-                <h1>
-                    <a href="https://www.eyeofophidia.net" target="blank" className={PortfolioCSS.link}>
-                        <FontAwesomeIcon icon={faEye} className={PortfolioCSS.icon}/>
-                        Eye of Ophidia
-                    </a>
+                <h1 className={PortfolioCSS.header1}>
+                    {"<"}<FontAwesomeIcon icon={faEye} className={PortfolioCSS.icon}/>
+                    Eye of Ophidia{" />"}
                 </h1>
                 <p className={PortfolioCSS.text}>
                     <a href="https://www.eyeofophidia.net" target="blank">Eyeofophidia.net</a> is a tool that catalogues all recorded matches for a hero based trading card game called Flesh and Blood TCG. Users can search for matches by player's names, event names, dates, and by hero matchup.
@@ -29,17 +27,26 @@ function Portfolio() {
                 
                 <p className={PortfolioCSS.linkContainer}>
                     <a href="https://www.eyeofophidia.net"
-                        className={`${PortfolioCSS.link} ${PortfolioCSS.text}`}
+                        className={`${PortfolioCSS.githubLink} ${PortfolioCSS.text}`}
                         target="blank">
-                        https://www.eyeofophidia.net
+                        <FontAwesomeIcon icon={faEye}  className={PortfolioCSS.githubIcon}/>
+                        <div>Visit Live Site</div>
                     </a>
-                    <a href="https://github.com/AlanChavarin/eye-of-ophidia" target="blank">
+                    <a href="https://github.com/AlanChavarin/eye-of-ophidia" target="blank" className={PortfolioCSS.githubLink}>
                         <FontAwesomeIcon icon={faGithub} className={PortfolioCSS.githubIcon}/>
+                        <div>Visit Repository</div>
                     </a>
                 </p>
                 
             </div>
-            <EyeOfOphidiaGallery />
+            <div>
+                <h1 className={PortfolioCSS.header2}>
+                    {"<"}<FontAwesomeIcon icon={faEye} className={PortfolioCSS.icon}/>
+                    Eye of Ophidia{" />"}
+                </h1>
+                <EyeOfOphidiaGallery />
+            </div>
+            
         </div>
         
         <OrangeBorders />

@@ -1,6 +1,7 @@
 .parent{
     padding: 30px 60px 60px 60px;
     max-width: 1400px;
+    margin: 10px;
 }
 
 .container{
@@ -34,16 +35,94 @@
 .linkContainer{
     display: flex;
     gap: 20px;
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    align-items: center;
+}
+
+.githubLink{
+    background-color: var(--dark);
+    padding: 15px;
+    border-radius: 10px;
+
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+    color: white;
+    text-decoration: none;
+    height: 50px;
+
+    white-space: nowrap;
+}
+
+.githubLink:hover > *{
+    color: var(--highlight);
+    cursor: pointer;
 }
 
 .githubIcon{
     color: white;
-    font-size: 70px;
+    font-size: 50px;
 }
 
-.githubIcon:hover{
-    color: var(--highlight);
-    cursor: pointer;
+.header2{
+    display: none;
+}
+
+@media(width < 1380px){
+    .container{
+        gap: 20px;
+    }
+
+    .githubLink{
+        padding: 0px 20px 0px 20px;
+    }
+
+    .githubIcon{
+        font-size: 20px;
+    }
+
+    .githubLink > div{
+        font-size: 16px;
+    }
+}
+
+@media(width < 1024px){
+    .container{
+        flex-direction: column-reverse;
+    }
+
+    .header1{
+        display: none;
+    }
+
+    .header2{
+        display: block;
+        text-align: center;
+        font-size: 25px;
+    }
+}
+
+@media(width < 490px){
+    .parent{
+        margin: 10px;
+        padding: 0px;
+    }
+
+    .linkContainer{
+        flex-direction: column-reverse;
+    }
+
+    .text{
+        font-size: 15px;
+    }
+
+    .text > a{
+        color: white;
+        font-size: 15px;
+    }
+
+    .text > span{
+        font-size: 15px;
+    }
 }

@@ -55,21 +55,27 @@ function EyeOfOphidiaGallery({page}) {
   const onClick = () => {
     if(!page){
       navigate(`/gallery?pic=${imageIndex}`)
+    } else if(page){
+      window.history.back()
     }
   }
 
   return (
     <div className={EyeOfOphidiaGalleryCSS.parent}>
-      <div style={{textAlign: 'center'}}>
-        {imageDescriptionArray[imageIndex]}
-      </div>
+      
 
       <div className={`${page ? EyeOfOphidiaGalleryCSS.imgContainerFullScreen 
       : EyeOfOphidiaGalleryCSS.imgContainer}`}>
 
         <img src={`screenshots/${imageArray[imageIndex]}`} alt=""
-        className={EyeOfOphidiaGalleryCSS.img} onClick={() => onClick()}/>
+        className={EyeOfOphidiaGalleryCSS.img}
+        style={{cursor: page ? 'zoom-out' : ''}}
+        onClick={() => onClick()}/>
 
+      </div>
+
+      <div style={{textAlign: 'center'}} className={EyeOfOphidiaGalleryCSS.description}>
+        {imageDescriptionArray[imageIndex]}
       </div>
 
       <div className={EyeOfOphidiaGalleryCSS.radioContainer}>
@@ -99,7 +105,7 @@ function EyeOfOphidiaGallery({page}) {
           </button>
 
           <button to='/' className={EyeOfOphidiaGalleryCSS.xButton}
-           onClick={() => window.history.back()}>
+           onClick={() => onClick()}>
             <FontAwesomeIcon icon={faX} />
           </button>
       </>}

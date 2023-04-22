@@ -3,6 +3,7 @@
     gap: 60px;
     padding: 60px;
     max-width: 1000px;
+    margin: 10px;
 }
 
 .imageContainer{
@@ -26,4 +27,54 @@
 
 .aboutMe > p{
     font-size: 18px;
+}
+
+.header2{
+    display: none;
+}
+
+@media(width < 952px){
+    .parent{
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .imageContainer{
+        height: 133px;
+    }
+
+    .imageContainer :nth-child(1){
+        border-radius: 10px;
+    }
+
+    .imageContainer img:nth-child(2){
+        display: none;
+    }
+
+    .header1{
+        display: none;
+    }
+
+    .header2{
+        display: block;
+    }
+}
+
+@media(width < 441px){
+    .parent{
+        padding: 0px;
+    }
+
+    .aboutMe > p{
+        font-size: 15px;
+    }
+
+    .imageContainer{
+        border: none;
+        height: 100px;
+    }
+
+    .imageContainer :nth-child(1){
+        width: 300px;
+    }
 }

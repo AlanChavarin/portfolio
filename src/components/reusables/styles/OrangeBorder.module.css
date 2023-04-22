@@ -30,6 +30,30 @@
     right: 0px;
 }
 
-.rightLine, .bottomLine, .leftLine, .topLine{
+.simpleLine{
+    border: 1px solid var(--highlight);
+    position: absolute;
+    width: 80vw;
+    top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    
+    display: none;
+}
+
+.rightLine, .bottomLine, .leftLine, .topLine, .simpleLine{
     box-shadow: 4px 4px 6px black;
+}
+
+@media(width < 630px){
+    .rightLine, .bottomLine, .leftLine, .topLine{
+        display: none;
+    }
+
+    .simpleLine{
+        display: block;
+    }
 }

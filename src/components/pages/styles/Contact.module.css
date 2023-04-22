@@ -1,12 +1,14 @@
 .parent{
     padding: 60px;
+    max-width: 550px;
+    width: 74vw;
 }
 
 .form{
     display: flex;
     flex-direction: column;
     gap: 15px;
-    min-width: 600px;
+    width: 100%;
 }
 
 .form > div{
@@ -38,4 +40,11 @@
 .submit:hover{
     cursor: pointer;
     background-color: rgb(189, 113, 0);
+}
+
+@media(width < 600px){
+    .parent{
+        width: 90vw;
+        padding: 0px;
+    }
 }

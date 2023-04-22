@@ -1,5 +1,6 @@
 :root{
   --highlight: rgb(255, 153, 0);
+  --dark: rgb(41, 41, 41);
 }
 
 html * {
@@ -16,16 +17,11 @@ body {
 }
 
 .App {
-  height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
 .PageContainer{
-  flex: 1;
-  align-self: center;
-  width: 100%;
-
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -44,13 +40,6 @@ body {
 h1{
   font-size: 35px;
   white-space: nowrap;
-}
-
-section{
-  display: flex;
-  gap: 60px;
-  padding: 60px;
-  max-width: 1000px;
 }
 
 span{

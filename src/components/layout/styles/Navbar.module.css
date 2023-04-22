@@ -4,7 +4,7 @@
     gap: 30px;
     justify-content: center;
     color: white;
-    background-color: rgb(41, 41, 41);
+    background-color: var(--dark);
 
     position: fixed;
     top: 0px;
@@ -32,3 +32,10 @@
 .icon:hover{
     color: var(--highlight);
 }
+
+@media(width < 770px){
+    .parent button:nth-child(n+2){
+        display: none;
+    }
+}
+

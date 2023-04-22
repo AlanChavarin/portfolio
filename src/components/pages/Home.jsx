@@ -4,7 +4,10 @@ import OrangeBorders from '../reusables/OrangesBorders'
 function Home() {
   return (
     <div className={HomeCSS.parent} id='home'>
-      <p className={HomeCSS.hello}><b>Hello!</b> my name is <b className={HomeCSS.highlight}>Alan Chavarin</b></p>
+      <p className={HomeCSS.hello}>
+        <b>Hello!</b> my name is <br className={HomeCSS.nameBreak}/>
+        <b className={HomeCSS.highlight}> Alan Chavarin</b>
+      </p>
       <p>I'm an aspiring <b className={HomeCSS.highlight}>full stack</b> web developer based out of San Diego, California.</p>
       <div className={HomeCSS.logoContainer}>
         <img src="HTML5.png" alt="" width='70'/>
