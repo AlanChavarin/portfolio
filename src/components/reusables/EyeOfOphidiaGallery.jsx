@@ -91,8 +91,6 @@ function EyeOfOphidiaGallery({page}) {
         </div>
       </>}
 
-      
-
       {page && <>
           <button 
             className={`${EyeOfOphidiaGalleryCSS.sideButton} 
