@@ -1,5 +1,5 @@
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-// import { faArrowRightLong, faArrowLeftLong, faX } from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faArrowRightLong, faArrowLeftLong, faX } from "@fortawesome/free-solid-svg-icons"
 import EyeOfOphidiaGalleryCSS from './styles/EyeOfOphidiaGallery.module.css'
 import { useState } from "react"
 import { useNavigate, useSearchParams } from "react-router-dom"
@@ -85,13 +85,13 @@ function EyeOfOphidiaGallery({page}) {
           ))}
         </div>
 
-        {/* <div className={EyeOfOphidiaGalleryCSS.arrowContainer}>
+        <div className={EyeOfOphidiaGalleryCSS.arrowContainer}>
           <button onClick={() => onScroll(-1)}><FontAwesomeIcon icon={faArrowLeftLong} /></button>
           <button onClick={() => onScroll(1)}><FontAwesomeIcon icon={faArrowRightLong} /></button>
-        </div> */}
+        </div>
       </>}
 
-      {/* {page && <>
+      {page && <>
           <button 
             className={`${EyeOfOphidiaGalleryCSS.sideButton} 
             ${EyeOfOphidiaGalleryCSS.sideButtonLeft}`} 
@@ -110,7 +110,7 @@ function EyeOfOphidiaGallery({page}) {
            onClick={() => onClick()}>
             <FontAwesomeIcon icon={faX} />
           </button>
-      </>} */}
+      </>}
       
 
     </div>

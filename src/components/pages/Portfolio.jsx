@@ -1,8 +1,8 @@
 import OrangeBorders from "../reusables/OrangesBorders"
 import PortfolioCSS from './styles/Portfolio.module.css'
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-// import { faEye } from "@fortawesome/free-solid-svg-icons"
-// import { faGithub } from "@fortawesome/free-brands-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faEye } from "@fortawesome/free-solid-svg-icons"
+import { faGithub } from "@fortawesome/free-brands-svg-icons"
 import EyeOfOphidiaGallery from "../reusables/EyeOfOphidiaGallery"
 
 function Portfolio() {
@@ -12,8 +12,8 @@ function Portfolio() {
         <div className={PortfolioCSS.container}>
             <div>
                 <h1 className={PortfolioCSS.header1}>
-                    {/* {"<"}<FontAwesomeIcon icon={faEye} className={PortfolioCSS.icon}/>
-                    Eye of Ophidia{" />"} */}
+                    {"<"}<FontAwesomeIcon icon={faEye} className={PortfolioCSS.icon}/>
+                    Eye of Ophidia{" />"}
                 </h1>
                 <p className={PortfolioCSS.text}>
                     <a href="https://www.eyeofophidia.net" target="blank">Eyeofophidia.net</a> is a tool that catalogues all recorded matches for a hero based trading card game called Flesh and Blood TCG. Users can search for matches by player's names, event names, dates, and by hero matchup.
@@ -29,11 +29,11 @@ function Portfolio() {
                     <a href="https://www.eyeofophidia.net"
                         className={`${PortfolioCSS.githubLink} ${PortfolioCSS.text}`}
                         target="blank">
-                        {/* <FontAwesomeIcon icon={faEye}  className={PortfolioCSS.githubIcon}/> */}
+                        <FontAwesomeIcon icon={faEye}  className={PortfolioCSS.githubIcon}/>
                         <div>Visit Live Site</div>
                     </a>
                     <a href="https://github.com/AlanChavarin/eye-of-ophidia" target="blank" className={PortfolioCSS.githubLink}>
-                        {/* <FontAwesomeIcon icon={faGithub} className={PortfolioCSS.githubIcon}/> */}
+                        <FontAwesomeIcon icon={faGithub} className={PortfolioCSS.githubIcon}/>
                         <div>Visit Repository</div>
                     </a>
                 </p>
@@ -41,8 +41,8 @@ function Portfolio() {
             </div>
             <div>
                 <h1 className={PortfolioCSS.header2}>
-                    {/* {"<"}<FontAwesomeIcon icon={faEye} className={PortfolioCSS.icon}/>
-                    Eye of Ophidia{" />"} */}
+                    {"<"}<FontAwesomeIcon icon={faEye} className={PortfolioCSS.icon}/>
+                    Eye of Ophidia{" />"}
                 </h1>
                 <EyeOfOphidiaGallery />
             </div>
