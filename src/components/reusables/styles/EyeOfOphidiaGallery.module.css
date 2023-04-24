@@ -47,8 +47,8 @@
 }
 
 .imgContainerFullScreen{
-    width: 100%;
-    height: 83vh;
+    height: 100vh;
+    position: absolute;
     display: flex;
     justify-content: center;
 }
@@ -65,6 +65,14 @@
     filter: brightness(95%)
 }
 
+.imgFullScreen{
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+    box-shadow: 8px 8px 3px rgb(22, 18, 14);
+}
+
 .sideButton{
     position: absolute;
     background: none;
@@ -72,6 +80,7 @@
     color: white;
     width: 20vw;
     height: 100%;
+    min-width: 100px;
 }
 
 .sideButtonLeft{
@@ -84,12 +93,18 @@
 }
 
 .sideButton > *{
-    font-size: 100px;
-    text-shadow: 1px 1px 2px pink;
+    font-size: 50px;
+    padding: 5px 20px 5px 20px;
+    background-color: var(--highlight);
+    border-radius: 20px;
 }
 
 .sideButton:hover{
     background-color: rgba(0, 0, 0, .4)
+}
+
+.sideButton:hover > *{
+    background-color: rgb(219, 132, 0);;
 }
 
 .xButton{
@@ -125,6 +140,19 @@
     .imgContainer{
         width: 80vw;
         height: 80vw;
+    }
+}
+
+@media(width < 450px){
+    .sideButton:hover{
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .sideButton > *{
+        font-size: 20px;
+        padding: 3px 10px 3px 10px;
+        background-color: var(--highlight);
+        border-radius: 20px;
     }
 }
 

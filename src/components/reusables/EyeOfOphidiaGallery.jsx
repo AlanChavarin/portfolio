@@ -68,40 +68,44 @@ function EyeOfOphidiaGallery({page}) {
       : EyeOfOphidiaGalleryCSS.imgContainer}`}>
 
         <img src={`screenshots/${imageArray[imageIndex]}`} alt=""
-        className={EyeOfOphidiaGalleryCSS.img}
+        className={`${page ? EyeOfOphidiaGalleryCSS.imgFullScreen : EyeOfOphidiaGalleryCSS.img}`}
         style={{cursor: page ? 'zoom-out' : ''}}
         onClick={() => onClick()}/>
 
       </div>
 
-      <div style={{textAlign: 'center'}} className={EyeOfOphidiaGalleryCSS.description}>
-        {imageDescriptionArray[imageIndex]}
-      </div>
+      {!page && <>
+        <div style={{textAlign: 'center'}} className={EyeOfOphidiaGalleryCSS.description}>
+          {imageDescriptionArray[imageIndex]}
+        </div>
 
-      <div className={EyeOfOphidiaGalleryCSS.radioContainer}>
-        {imageArray.map(image => (
-          <input type="radio" checked={image===imageArray[imageIndex]}/>
-        ))}
-      </div>
+        <div className={EyeOfOphidiaGalleryCSS.radioContainer}>
+          {imageArray.map(image => (
+            <input type="radio" checked={image===imageArray[imageIndex]}/>
+          ))}
+        </div>
 
-      <div className={EyeOfOphidiaGalleryCSS.arrowContainer}>
-        <button onClick={() => onScroll(-1)}><FontAwesomeIcon icon={faArrowLeftLong} /></button>
-        <button onClick={() => onScroll(1)}><FontAwesomeIcon icon={faArrowRightLong} /></button>
-      </div>
+        <div className={EyeOfOphidiaGalleryCSS.arrowContainer}>
+          <button onClick={() => onScroll(-1)}><FontAwesomeIcon icon={faArrowLeftLong} /></button>
+          <button onClick={() => onScroll(1)}><FontAwesomeIcon icon={faArrowRightLong} /></button>
+        </div>
+      </>}
+
+      
 
       {page && <>
-        <button 
-          className={`${EyeOfOphidiaGalleryCSS.sideButton} 
-          ${EyeOfOphidiaGalleryCSS.sideButtonLeft}`} 
-          onClick={() => onScroll(-1)}>
-            <FontAwesomeIcon icon={faArrowLeftLong} />
+          <button 
+            className={`${EyeOfOphidiaGalleryCSS.sideButton} 
+            ${EyeOfOphidiaGalleryCSS.sideButtonLeft}`} 
+            onClick={() => onScroll(-1)}>
+              <FontAwesomeIcon icon={faArrowLeftLong} />
           </button>
 
           <button 
-          className={`${EyeOfOphidiaGalleryCSS.sideButton}
-          ${EyeOfOphidiaGalleryCSS.sideButtonRight}`} 
-          onClick={() => onScroll(1)}>
-            <FontAwesomeIcon icon={faArrowRightLong} />
+            className={`${EyeOfOphidiaGalleryCSS.sideButton}
+            ${EyeOfOphidiaGalleryCSS.sideButtonRight}`} 
+            onClick={() => onScroll(1)}>
+              <FontAwesomeIcon icon={faArrowRightLong} />
           </button>
 
           <button to='/' className={EyeOfOphidiaGalleryCSS.xButton}
