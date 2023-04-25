@@ -1,4 +1,0 @@
-build:
-  env:
-    - NODE_ENV=production
-  flags: --omit=dev
