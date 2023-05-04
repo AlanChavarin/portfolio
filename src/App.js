@@ -1,6 +1,5 @@
 //layout
 import Navbar from "./components/layout/Navbar"
-import Footer from "./components/layout/Footer"
 
 //pages
 import Home from "./components/pages/Home"

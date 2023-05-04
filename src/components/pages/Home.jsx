@@ -1,5 +1,4 @@
 import HomeCSS from './styles/Home.module.css'
-import OrangeBorders from '../reusables/OrangesBorders'
 
 function Home() {
   return (
