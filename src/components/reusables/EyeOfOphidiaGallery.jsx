@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faArrowRightLong, faArrowLeftLong, faX } from "@fortawesome/free-solid-svg-icons"
 import EyeOfOphidiaGalleryCSS from './styles/EyeOfOphidiaGallery.module.css'
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { useNavigate, useSearchParams } from "react-router-dom"
 
 function EyeOfOphidiaGallery({page}) {
@@ -59,6 +59,14 @@ function EyeOfOphidiaGallery({page}) {
       window.history.back()
     }
   }
+
+  useEffect(() => {
+    imageArray.forEach((image) => {
+      const img = new Image()
+      img.src = `screenshots/${image}`
+      console.log(img.src)
+    })
+  }, [])
 
   return (
     <div className={EyeOfOphidiaGalleryCSS.parent}>
