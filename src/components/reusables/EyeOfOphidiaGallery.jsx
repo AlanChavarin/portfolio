@@ -4,8 +4,7 @@ import EyeOfOphidiaGalleryCSS from './styles/EyeOfOphidiaGallery.module.css'
 import { useState, useEffect } from "react"
 import { useNavigate, useSearchParams } from "react-router-dom"
 
-function EyeOfOphidiaGallery({page}) {
-  const imageArray = [
+const imageArray = [
     'homepage.PNG',
     'resultspage.PNG',
     'Matchpage.PNG', 
@@ -36,6 +35,9 @@ function EyeOfOphidiaGallery({page}) {
     'Match Search Resuts (Mobile)',
   ]
 
+function EyeOfOphidiaGallery({page}) {
+  
+
   const [searchParams] = useSearchParams()
   const [imageIndex, setImageIndex] = useState(
     searchParams.get('pic') ? parseInt(searchParams.get('pic')) : 0
@@ -64,7 +66,6 @@ function EyeOfOphidiaGallery({page}) {
     imageArray.forEach((image) => {
       const img = new Image()
       img.src = `screenshots/${image}`
-      console.log(img.src)
     })
   }, [])
 
