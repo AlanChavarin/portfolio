@@ -1,4 +1,3 @@
-import OrangeBorders from "../reusables/OrangesBorders"
 import PortfolioCSS from './styles/Portfolio.module.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faEye } from "@fortawesome/free-solid-svg-icons"
@@ -49,8 +48,7 @@ function Portfolio() {
                 </div>
                 
             </div>
-            
-            {/* <OrangeBorders /> */}
+        
         </section>
     </div>
   )

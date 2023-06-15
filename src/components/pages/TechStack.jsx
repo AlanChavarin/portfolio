@@ -1,4 +1,3 @@
-import OrangeBorders from "../reusables/OrangesBorders"
 import TechStackCSS from './styles/TechStack.module.css'
 
 function TechStack() {
@@ -73,8 +72,6 @@ function TechStack() {
                     </div>
                 </div>
             </div>
-            
-            {/* <OrangeBorders /> */}
         </section>
     </div>
     

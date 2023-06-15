@@ -1,7 +1,4 @@
 import ContactCSS from './styles/Contact.module.css'
-import OrangeBorders from '../reusables/OrangesBorders'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
 
 function Contact() {
   return (

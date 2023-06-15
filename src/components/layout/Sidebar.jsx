@@ -1,6 +1,5 @@
 //css
 import SidebarCSS from './styles/Sidebar.module.css'
-import NavbarCSS from './styles/Navbar.module.css'
 
 //font awesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'

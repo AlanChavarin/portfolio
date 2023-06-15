@@ -1,5 +1,4 @@
 import AboutCSS from './styles/About.module.css'
-import OrangeBorders from '../reusables/OrangesBorders'
 
 function About() {
   return (

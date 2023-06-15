@@ -22,7 +22,6 @@ function Home({onScrollTo}) {
       <button className={`${HomeCSS.button} boxShadow`} onClick={() => onScrollTo('portfolio')}>
         See my work <FontAwesomeIcon icon={faArrowDown} className={HomeCSS.arrowDownIcon} />
       </button>
-      {/* <OrangeBorders/> */}
     </div>
   )
 }
