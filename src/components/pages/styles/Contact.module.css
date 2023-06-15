@@ -1,4 +1,12 @@
+.wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--highlight);
+}
+
 .parent{
+    background-color: white;
     padding: 60px;
     max-width: 550px;
     width: 74vw;
@@ -22,7 +30,6 @@
 
 .form > div > input, .form > div > textarea{
     font-size: 20px;
-    box-shadow: 6px 6px 3px rgb(20, 20, 20);
 }
 
 .form > div > input:focus, .form > div > textarea:focus{
@@ -31,10 +38,9 @@
 }
 
 .submit{
-    box-shadow: 6px 6px 3px rgb(24, 24, 24);
-
     color: white;
     background-color: var(--highlight);
+    border: none;
 }
 
 .submit:hover{
@@ -42,9 +48,21 @@
     background-color: rgb(189, 113, 0);
 }
 
+.p{
+    font-size: 1rem;
+}
+
+.p > *{
+    font-size: 1rem;
+}
+
 @media(width < 600px){
     .parent{
         width: 90vw;
-        padding: 0px;
+        padding: 16px;
     }
+}
+
+@media(width < 360px){
+    
 }

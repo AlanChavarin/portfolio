@@ -5,15 +5,18 @@
 
 html * {
   font-size: 24px;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 body {
+  overflow-x:hidden;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: white;
-  background-color: rgb(61, 61, 61);
+  /* color: white; */
+  /* background-color: rgb(61, 61, 61); */
+  color: black;
+  background-color: rgb(251, 251, 251);
 }
 
 .App {
@@ -25,7 +28,7 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 100px;
+  gap: 256px;
 
   padding-bottom: 400px;
   margin-top: 100px;
@@ -38,10 +41,31 @@ body {
 /* global styles */
 
 h1{
-  font-size: 35px;
+  margin-top: 0px;
+  font-size: 2.441rem;
   white-space: nowrap;
+}
+
+@media(width < 360px){
+  h1{
+    font-size: 1.953rem;
+  }
 }
 
 span{
   color: var(--highlight)
+}
+
+.boxShadow{
+  box-shadow: 4px 4px 2px rgb(54, 54, 54);
+}
+
+.translateY{
+  transform: translateY(128px);
+}
+
+@media(width < 410px){
+  .translateY{
+    transform: translateY(64px);
+  }
 }

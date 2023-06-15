@@ -26,10 +26,10 @@ function App() {
               <Route path='/' element={<>
               <Navbar onScrollTo={onScrollTo}/>
                 <div className="PageContainer">
-                  <Home/>
-                  <About/>
+                  <Home onScrollTo={onScrollTo}/>
                   <TechStack/>
                   <Portfolio/>
+                  <About/>
                   <Contact />
                 </div></>
               }/>

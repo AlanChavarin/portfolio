@@ -1,21 +1,26 @@
+.wrapper{
+    background-color: #D41737;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .parent{
+    background-color: white;
     display: flex;
     gap: 60px;
     padding: 60px;
     max-width: 1000px;
-    margin: 10px;
 }
 
 .imageContainer{
     display: flex;
     flex-direction: column;
-    border-radius: 13px;
-    box-shadow: 10px 10px 3px #272727;
-    border: 2px solid var(--highlight);
+    border: 2px solid lightgray;
     height: 358px;
 }
 
-.imageContainer :nth-child(1){
+/* .imageContainer :nth-child(1){
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
 }
@@ -23,10 +28,11 @@
 .imageContainer :nth-child(2){
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
-}
+} */
 
 .aboutMe > p{
-    font-size: 18px;
+    font-size: 1.25rem;
+    font-family: 'Karla';
 }
 
 .header2{
@@ -62,7 +68,7 @@
 
 @media(width < 441px){
     .parent{
-        padding: 0px;
+        padding: 16px;
     }
 
     .aboutMe > p{
@@ -70,11 +76,12 @@
     }
 
     .imageContainer{
-        border: none;
-        height: 100px;
+        height: auto;
     }
 
     .imageContainer :nth-child(1){
-        width: 300px;
+        width: 100%;
+        /* padding-left: 16px;
+        padding-right: 16px; */
     }
 }

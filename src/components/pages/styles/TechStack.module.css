@@ -1,8 +1,15 @@
+.wrapper{
+    background-color: rgba(240,220,78,255);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .parent{
     display: flex;
-    gap: 60px;
-    padding: 60px;
-    max-width: 1000px;
+    gap: 64px;
+    padding: 64px;
+    background-color: rgb(255, 255, 255);
 }
 
 .stackContainer{
@@ -13,7 +20,7 @@
 
 .stackContainer > div{
     display: flex;
-    gap: 40px;
+    gap: 32px;
     align-items: center;
 }
 
@@ -23,14 +30,23 @@
 }
 
 .nameDesc :nth-child(1){
-    font-size: 40px;
+    font-size: 1.953rem;
     white-space: nowrap;
+    margin-bottom: 8px;
 }
 
 .nameDesc :nth-child(2){
-    font-size: 17px;
+    font-size: 1.25rem;
+    white-space: nowrap;
+    font-family: 'Karla';
+}
+
+.h2{
+    margin-top: 0px;
+    font-size: 2.441rem;
     white-space: nowrap;
 }
+
 
 @media(width < 1070px){
     .parent{
@@ -38,7 +54,7 @@
         padding: 50px;
     }
 
-    .h1{
+    .h2{
         font-size: 25px;
         text-align: center;
     }
@@ -69,11 +85,12 @@
 
 @media(width < 400px){
     .parent{
-        padding: 0px;
+        padding: 32px 8px 32px 8px;
+        width: 100%;
     }
 
-    .h1{
-        font-size: 20px;
+    .h2{
+        font-size: 1.25rem;
     }
 
     .nameDesc div:nth-child(1){
@@ -84,7 +101,11 @@
         font-size: 12px;
     }
 
+}
 
-
-
+@media(width < 320px){
+    .h2{
+        font-size: 1rem;
+        margin: 16px 0px 32px 0px;
+    }
 }

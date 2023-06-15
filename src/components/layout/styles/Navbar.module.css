@@ -10,6 +10,7 @@
     top: 0px;
     z-index: 1;
     width: 100%;
+
 }
 
 .button{
@@ -17,6 +18,7 @@
     border: none;
     color: white;
     font-weight: 700;
+    white-space: nowrap;
 }
 
 .button:hover{
@@ -33,9 +35,42 @@
     color: var(--highlight);
 }
 
+.bars{
+    visibility: hidden;
+    position: absolute;
+    right: 0px;
+
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+
+    height: 100%;
+    width: 64px;
+}
+
+.bars:hover{
+    background-color: rgb(22, 22, 22);
+}
+
+.bars > * {
+    font-size: 1.953rem;
+}
+
 @media(width < 770px){
-    .parent button:nth-child(n+2){
-        display: none;
+    .parent{
+        padding: 0px;
     }
+
+    .bars{
+        visibility: visible !important;
+    }
+
+    .parent > *{
+        visibility: hidden;
+    }
+
+    
 }
 

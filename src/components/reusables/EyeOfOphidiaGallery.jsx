@@ -36,8 +36,6 @@ const imageArray = [
   ]
 
 function EyeOfOphidiaGallery({page}) {
-  
-
   const [searchParams] = useSearchParams()
   const [imageIndex, setImageIndex] = useState(
     searchParams.get('pic') ? parseInt(searchParams.get('pic')) : 0
@@ -71,20 +69,21 @@ function EyeOfOphidiaGallery({page}) {
 
   return (
     <div className={EyeOfOphidiaGalleryCSS.parent}>
-      
 
       <div className={`${page ? EyeOfOphidiaGalleryCSS.imgContainerFullScreen 
       : EyeOfOphidiaGalleryCSS.imgContainer}`}>
 
         <img src={`screenshots/${imageArray[imageIndex]}`} alt=""
-        className={`${page ? EyeOfOphidiaGalleryCSS.imgFullScreen : EyeOfOphidiaGalleryCSS.img}`}
+        className={`boxShadow ${page ? EyeOfOphidiaGalleryCSS.imgFullScreen : EyeOfOphidiaGalleryCSS.img}`}
         style={{cursor: page ? 'zoom-out' : ''}}
         onClick={() => onClick()}/>
+
+        
 
       </div>
 
       {!page && <>
-        <div style={{textAlign: 'center'}} className={EyeOfOphidiaGalleryCSS.description}>
+        <div className={EyeOfOphidiaGalleryCSS.description}>
           {imageDescriptionArray[imageIndex]}
         </div>
 
@@ -95,22 +94,24 @@ function EyeOfOphidiaGallery({page}) {
         </div>
 
         <div className={EyeOfOphidiaGalleryCSS.arrowContainer}>
-          <button onClick={() => onScroll(-1)}><FontAwesomeIcon icon={faArrowLeftLong} /></button>
-          <button onClick={() => onScroll(1)}><FontAwesomeIcon icon={faArrowRightLong} /></button>
+          <button className='boxShadow' onClick={() => onScroll(-1)}><FontAwesomeIcon icon={faArrowLeftLong} /></button>
+          <button className='boxShadow' onClick={() => onScroll(1)}><FontAwesomeIcon icon={faArrowRightLong} /></button>
         </div>
       </>}
 
       {page && <>
           <button 
             className={`${EyeOfOphidiaGalleryCSS.sideButton} 
-            ${EyeOfOphidiaGalleryCSS.sideButtonLeft}`} 
+            ${EyeOfOphidiaGalleryCSS.sideButtonLeft}
+            `} 
             onClick={() => onScroll(-1)}>
               <FontAwesomeIcon icon={faArrowLeftLong} />
           </button>
 
           <button 
             className={`${EyeOfOphidiaGalleryCSS.sideButton}
-            ${EyeOfOphidiaGalleryCSS.sideButtonRight}`} 
+            ${EyeOfOphidiaGalleryCSS.sideButtonRight}
+            `} 
             onClick={() => onScroll(1)}>
               <FontAwesomeIcon icon={faArrowRightLong} />
           </button>
