@@ -58,7 +58,7 @@ function Navbar({onScrollTo}) {
           Contact
         </button>
         <div className={NavbarCSS.filler}></div>
-        <a href="https://www.google.com" target="blank">
+        <a href="https://www.linkedin.com/in/alan-chavarin-5bb910248/" target="blank">
           <FontAwesomeIcon icon={faLinkedin} className={NavbarCSS.icon}/>
         </a>
         <a href="https://github.com/AlanChavarin" target="blank">
