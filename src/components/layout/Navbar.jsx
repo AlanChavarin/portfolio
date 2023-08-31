@@ -15,8 +15,6 @@ import { useState, useRef } from 'react'
 //gsap
 import { gsap } from 'gsap'
 
-
-
 function Navbar({onScrollTo}) {
   const nav = useRef()
   let lastScroll = 0

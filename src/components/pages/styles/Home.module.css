@@ -1,5 +1,5 @@
 .parent{
-    margin-top: 64px;
+    margin: 64px 16px 16px 16px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -59,7 +59,7 @@
 }
 
 .p{
-    margin: 0px 8px 0px 8px;
+    margin: 16px;
 }
 
 @media(width < 940px){
@@ -86,6 +86,7 @@
 }
 
 @media(width < 520px){
+
     .parent p:nth-child(1){
         font-size: 25px;
     }
@@ -101,6 +102,8 @@
     .parent p:nth-child(2) > *{
         font-size: 20px;
     }
+
+    
 }
 
 @media(width < 400px){
@@ -154,6 +157,9 @@
 }
 
 @media(width < 325px){
+    .p{
+        margin-bottom: 32px;
+    }
 
     .hello{
         font-size: 1.953rem;
@@ -165,10 +171,10 @@
 }
 
 
-@media(width < 270px){
+@media(width < 290px){
     .button{
         padding: 8px 24px 8px 24px;
-        font-size: 1rem;
+        font-size: 20px;
     }
 
     .button > * {

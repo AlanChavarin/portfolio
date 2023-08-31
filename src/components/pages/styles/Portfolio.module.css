@@ -83,6 +83,10 @@
         gap: 24px;
     }
 
+    .parent{
+        margin: 16px;
+    }
+
     /* .githubLink{
         padding: 16px 24px 0px 24px;
     }
@@ -108,18 +112,18 @@
     .header2{
         display: block;
         text-align: center;
-        font-size: 25px;
+        font-size: 22px;
+    }
+
+    .parent{
+        padding: 48px 16px 48px 16px;
     }
 }
 
 @media(width < 490px){
-    .parent{
-        padding: 8px;
-    }
 
     .header1{
-        font-size: 1rem;
-        background-color: red;
+        font-size: 16px;
     }
 
     .linkContainer{

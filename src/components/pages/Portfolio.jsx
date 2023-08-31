@@ -8,12 +8,12 @@ function Portfolio() {
   return (
     <div className={PortfolioCSS.wrapper}>
         <section className={`${PortfolioCSS.parent} boxShadow translateY`} id='portfolio'>
-            <h1 style={{textAlign: 'center'}}>{'<'} Portfolio {'/>'}</h1>
+            <h1 style={{textAlign: 'center'}} className={PortfolioCSS}>{'<'} Portfolio {'/>'}</h1>
             <div className={PortfolioCSS.container}>
                 <div>
                     <div className={PortfolioCSS.header1}>
-                        {"<"}<FontAwesomeIcon icon={faEye} className={PortfolioCSS.icon}/>
-                        Eye of Ophidia{" />"}
+                        <FontAwesomeIcon icon={faEye} className={PortfolioCSS.icon}/>
+                        Eye of Ophidia
                     </div>
                     <p className={PortfolioCSS.text}>
                         <a href="https://www.eyeofophidia.net" target="blank" className={PortfolioCSS.a}>Eyeofophidia.net</a> is a tool that catalogues all recorded matches for a hero based trading card game called Flesh and Blood TCG. Users can search for matches by player's names, event names, dates, and by hero matchup.
@@ -40,10 +40,10 @@ function Portfolio() {
                     
                 </div>
                 <div>
-                    <h1 className={PortfolioCSS.header2}>
-                        {"<"}<FontAwesomeIcon icon={faEye} className={PortfolioCSS.icon}/>
-                        Eye of Ophidia{" />"}
-                    </h1>
+                    <div className={PortfolioCSS.header2}>
+                        <FontAwesomeIcon icon={faEye} className={PortfolioCSS.icon}/>
+                        Eye of Ophidia
+                    </div>
                     <EyeOfOphidiaGallery />
                 </div>
                 
