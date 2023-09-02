@@ -9,14 +9,13 @@
     background-color: white;
     padding: 60px;
     max-width: 550px;
-    width: 74vw;
+    margin: 16px;
 }
 
 .form{
     display: flex;
     flex-direction: column;
     gap: 15px;
-    width: 100%;
 }
 
 .form > div{
@@ -58,11 +57,33 @@
 
 @media(width < 600px){
     .parent{
-        width: 90vw;
         padding: 16px;
+    }
+
+    .h1{
+        font-size: 32px;
     }
 }
 
 @media(width < 360px){
-    
+    .h1{
+        font-size: 24px;
+    }
+
+    .form > div > input, .form > div > textarea{
+        font-size: 16px;
+    }
+
+    .form > div > label{
+        font-size: 18px;
+    }
+
+    .p{
+        font-size: 16px;
+    }
+
+    .p > a{
+        font-size: 16px;
+    }
+
 }

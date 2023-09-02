@@ -4,7 +4,7 @@ function Contact() {
   return (
     <div className={ContactCSS.wrapper}>
         <section className={`${ContactCSS.parent} boxShadow translateY`}>
-            <h1 style={{textAlign: 'center'}}>{"<"} Contact me {"/>"}</h1>
+            <h1 className={ContactCSS.h1} style={{textAlign: 'center'}}>{"<"} Contact me {"/>"}</h1>
             <p className={ContactCSS.p}>
                 Feel free to also contact me directly at: <span> </span>
                 <a href="mailto: alanchavarin4@hotmail.com">
@@ -22,14 +22,13 @@ function Contact() {
                 </div>
                 <div>
                     <label htmlFor="text">Message</label>
-                    <textarea name="text" id="" cols="30" rows="10" placeholder='Hello!'></textarea>
+                    <textarea className={`boxShadowSmall`} name="text" id="" rows="10" placeholder='Hello!'></textarea>
                 </div>
-                <button className={`${ContactCSS.submit}`} type="submit">
+                <button className={`${ContactCSS.submit} boxShadowSmall`} type="submit">
                     Send
-                    {/* <FontAwesomeIcon icon={faPaperPlane}/> */}
                 </button>
                 
-            </form>
+            </form> 
             {/* <OrangeBorders /> */}
         </section>
     </div>

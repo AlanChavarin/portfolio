@@ -5,6 +5,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons"
 import EyeOfOphidiaGallery from "../reusables/EyeOfOphidiaGallery"
 
 function Portfolio() {
+
   return (
     <div className={PortfolioCSS.wrapper}>
         <section className={`${PortfolioCSS.parent} boxShadow translateY`} id='portfolio'>
@@ -24,15 +25,18 @@ function Portfolio() {
                     <p className={PortfolioCSS.text}>
                         This is a fullstack tool was built using the <span>M.E.R.N. stack</span> (Mongodb, Express, Node, React). It is currently deployed using Railway.
                     </p>
+                    <p className={PortfolioCSS.text}>
+                        <a href="https://www.eyeofophidia.net" target="blank" className={PortfolioCSS.a}>Eyeofophidia.net</a> has had over 3000+ unique visitors from over 20+ different countries around the world according to my Google Analytics page. Players of the card game have found the site tremendously useful especially right after large tournaments.
+                    </p>
                     
                     <p className={PortfolioCSS.linkContainer}>
                         <a href="https://www.eyeofophidia.net"
-                            className={`${PortfolioCSS.githubLink}`}
+                            className={`${PortfolioCSS.githubLink} boxShadowSmall`}
                             target="blank">
                             <FontAwesomeIcon icon={faEye}  className={PortfolioCSS.githubIcon}/>
                             <div className={PortfolioCSS.linkText}>Visit Live Site</div>
                         </a>
-                        <a href="https://github.com/AlanChavarin/eye-of-ophidia" target="blank" className={PortfolioCSS.githubLink}>
+                        <a href="https://github.com/AlanChavarin/eye-of-ophidia" target="blank" className={`${PortfolioCSS.githubLink} boxShadowSmall`}>
                             <FontAwesomeIcon icon={faGithub} className={PortfolioCSS.githubIcon}/>
                             <div className={PortfolioCSS.linkText}>Visit Repository</div>
                         </a>

@@ -29,6 +29,9 @@ function Sidebar({setSidebar, onScrollTo}) {
             <button className={SidebarCSS.item} onClick={() => handleScroll('portfolio')}>
                 Portfolio
             </button>
+            <button className={SidebarCSS.item} onClick={() => handleScroll('about')}>
+                About
+            </button>
             <button className={SidebarCSS.item} onClick={() => handleScroll('contact')}>
                 Contact
             </button>

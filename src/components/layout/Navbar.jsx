@@ -52,6 +52,9 @@ function Navbar({onScrollTo}) {
         <button className={NavbarCSS.button} onClick={() => onScrollTo('portfolio')}>
           Portfolio
         </button>
+        <button className={NavbarCSS.button} onClick={() => onScrollTo('about')}>
+          About
+        </button>
         <button className={NavbarCSS.button} onClick={() => onScrollTo('contact')}>
           Contact
         </button>

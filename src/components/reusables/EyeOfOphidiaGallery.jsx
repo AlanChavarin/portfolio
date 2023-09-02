@@ -6,6 +6,7 @@ import { useNavigate, useSearchParams } from "react-router-dom"
 
 const imageArray = [
     'homepage.PNG',
+    'analytics.PNG',
     'resultspage.PNG',
     'Matchpage.PNG', 
     'eventpage.PNG',
@@ -21,6 +22,7 @@ const imageArray = [
   ]
   const imageDescriptionArray = [
     'Home Page',
+    'Google Analytics for eyeofophidia.net',
     'Match Search Results',
     'Match Page',
     'Events page',
@@ -60,6 +62,12 @@ function EyeOfOphidiaGallery({page}) {
     }
   }
 
+  const onChange = (e) => {
+    e.preventDefault()
+    setImageIndex(Number(e.target.getAttribute('index')))
+
+  }
+
   useEffect(() => {
     imageArray.forEach((image) => {
       const img = new Image()
@@ -88,8 +96,8 @@ function EyeOfOphidiaGallery({page}) {
         </div>
 
         <div className={EyeOfOphidiaGalleryCSS.radioContainer}>
-          {imageArray.map(image => (
-            <input type="radio" checked={image===imageArray[imageIndex]}/>
+          {imageArray.map((image, index) => (
+            <input type="radio" checked={image===imageArray[imageIndex]} index={index} onChange={onChange}/>
           ))}
         </div>
 

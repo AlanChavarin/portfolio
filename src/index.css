@@ -60,6 +60,10 @@ span{
   box-shadow: 4px 4px 2px rgb(54, 54, 54);
 }
 
+.boxShadowSmall{
+  box-shadow: 3px 3px 2px rgb(54, 54, 54);
+}
+
 .translateY{
   transform: translateY(128px);
 }

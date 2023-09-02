@@ -76,6 +76,12 @@
 
 .header2{
     display: none;
+    margin-bottom: 24px;
+}
+
+.a{
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 @media(width < 1380px){
