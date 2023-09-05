@@ -72,6 +72,28 @@ function TechStack() {
                     </div>
                 </div>
             </div>
+            <div className={TechStackCSS.stack}>
+                <div>
+                    <h2 className={TechStackCSS.h2}>{'< '}Testing{' />'}</h2>
+                </div>
+                <div className={TechStackCSS.stackContainer}>
+                    <div>
+                        <img src="cypress.webp" alt="" className={TechStackCSS.img}/>
+                        <div className={TechStackCSS.nameDesc}>
+                            <div>Cypress</div>
+                            <div>End-to-end testing software</div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <img src="jest.png" alt="" className={TechStackCSS.img}/>
+                        <div className={TechStackCSS.nameDesc}>
+                            <div>Jest</div>
+                            <div>Javascript testing library</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </div>
     

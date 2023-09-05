@@ -49,7 +49,7 @@
 }
 
 
-@media(width < 1220px){
+@media(width < 1540px){
     .parent{
         gap: 20px;
         padding: 16px;
@@ -82,7 +82,7 @@
     }
 }
 
-@media(width < 1000px){
+@media(width < 1200px){
     .parent{
         flex-direction: column;
     }

@@ -7,8 +7,8 @@ import EyeOfOphidiaGallery from "../reusables/EyeOfOphidiaGallery"
 function Portfolio() {
 
   return (
-    <div className={PortfolioCSS.wrapper}>
-        <section className={`${PortfolioCSS.parent} boxShadow translateY`} id='portfolio'>
+    <div className={PortfolioCSS.wrapper} id='portfolio'>
+        <section className={`${PortfolioCSS.parent} boxShadow translateY`}>
             <h1 style={{textAlign: 'center'}} className={PortfolioCSS}>{'<'} Portfolio {'/>'}</h1>
             <div className={PortfolioCSS.container}>
                 <div>
