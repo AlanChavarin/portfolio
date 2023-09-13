@@ -62,6 +62,15 @@
     margin: 16px;
 }
 
+.resumeLink{
+    padding: 16px;
+    font-size: 1.25rem;
+}
+
+.linkIcon{
+    font-size: 1rem;
+}
+
 @media(width < 940px){
     .parent p:nth-child(2){
         max-width: 500px;

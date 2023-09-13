@@ -1,6 +1,6 @@
 import HomeCSS from './styles/Home.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowDown } from '@fortawesome/free-solid-svg-icons'
+import { faArrowDown, faLink } from '@fortawesome/free-solid-svg-icons'
 
 function Home({onScrollTo}) {
   return (
@@ -22,6 +22,9 @@ function Home({onScrollTo}) {
       <button className={`${HomeCSS.button} boxShadow`} onClick={() => onScrollTo('portfolio')}>
         See my work <FontAwesomeIcon icon={faArrowDown} className={HomeCSS.arrowDownIcon} />
       </button>
+      <a href="/resume" target="_blank" className={HomeCSS.resumeLink}>
+        View Resume <FontAwesomeIcon icon={faLink} className={HomeCSS.linkIcon}/>
+      </a>
     </div>
   )
 }

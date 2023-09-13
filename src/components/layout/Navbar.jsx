@@ -4,7 +4,7 @@ import NavbarCSS from './styles/Navbar.module.css'
 //font awesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons"
-import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faLink } from '@fortawesome/free-solid-svg-icons'
 
 //assets
 import Sidebar from './Sidebar'
@@ -16,6 +16,7 @@ import { useState, useRef } from 'react'
 import { gsap } from 'gsap'
 
 function Navbar({onScrollTo}) {
+
   const nav = useRef()
   let lastScroll = 0
   let lastScrollDirection = 'down'
@@ -39,6 +40,13 @@ function Navbar({onScrollTo}) {
 
   const [sidebar, setSidebar] = useState(false)
 
+  const navigateToResumePage = () => {
+    const newTab = window.open('/resume', '_blank')
+    if (newTab) {
+      newTab.focus()
+    }
+  }
+
 
   return (
     <>
@@ -58,6 +66,9 @@ function Navbar({onScrollTo}) {
         <button className={NavbarCSS.button} onClick={() => onScrollTo('contact')}>
           Contact
         </button>
+        <button className={NavbarCSS.button} onClick={() => navigateToResumePage()}>
+          Resume <FontAwesomeIcon icon={faLink} className={NavbarCSS.linkIcon}/>
+        </button>
         <div className={NavbarCSS.filler}></div>
         <a href="https://www.linkedin.com/in/alan-chavarin-5bb910248/" target="blank">
           <FontAwesomeIcon icon={faLinkedin} className={NavbarCSS.icon}/>
@@ -68,6 +79,7 @@ function Navbar({onScrollTo}) {
         <button className={NavbarCSS.bars} onClick={() => setSidebar(!sidebar)}>
           <FontAwesomeIcon icon={faBars}/>
         </button>
+        
 
       </nav>
       {sidebar && <Sidebar setSidebar={setSidebar} onScrollTo={onScrollTo}/>}

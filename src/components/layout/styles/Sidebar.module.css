@@ -96,6 +96,10 @@
     text-decoration: none;
 }
 
+.linkIcon{
+    font-size: 1.25rem;
+}
+
 @media(width < 360px){
     .item, .linkText{
         font-size: 20px;

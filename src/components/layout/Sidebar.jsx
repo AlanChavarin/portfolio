@@ -5,6 +5,7 @@ import SidebarCSS from './styles/Sidebar.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faX } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faLink } from '@fortawesome/free-solid-svg-icons'
 
 
 function Sidebar({setSidebar, onScrollTo}) {
@@ -12,6 +13,13 @@ function Sidebar({setSidebar, onScrollTo}) {
     const handleScroll = (to) => {
         setSidebar(false)
         onScrollTo(to)
+    }
+
+    const navigateToResumePage = () => {
+        const newTab = window.open('/resume', '_blank')
+        if (newTab) {
+            newTab.focus()
+        }
     }
 
   return (
@@ -34,6 +42,9 @@ function Sidebar({setSidebar, onScrollTo}) {
             </button>
             <button className={SidebarCSS.item} onClick={() => handleScroll('contact')}>
                 Contact
+            </button>
+            <button className={SidebarCSS.item} onClick={() => navigateToResumePage()}>
+                Resume <FontAwesomeIcon icon={faLink} className={SidebarCSS.linkIcon}/>
             </button>
 
 

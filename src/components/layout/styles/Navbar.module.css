@@ -23,6 +23,7 @@
 
 .button:hover{
     color: var(--highlight);
+    cursor: pointer;
 }
 
 .icon{
@@ -58,7 +59,21 @@
     font-size: 1.953rem;
 }
 
-@media(width < 770px){
+.linkIcon{
+    font-size: 1.25rem;
+}
+
+@media(width < 1085px){
+    .button{
+        font-size: 1.25rem
+    }
+
+    .icon{
+        font-size: 30px;
+    }
+}
+
+@media(width < 960px){
     .parent{
         padding: 0px;
     }

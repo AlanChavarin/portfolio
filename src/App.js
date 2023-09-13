@@ -8,6 +8,7 @@ import TechStack from "./components/pages/TechStack"
 import Portfolio from "./components/pages/Portfolio"
 import Contact from "./components/pages/Contact"
 import EyeOfOphidiaGallery from "./components/reusables/EyeOfOphidiaGallery"
+import Resume from "./components/pages/Resume"
 
 //react
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
@@ -22,19 +23,20 @@ function App() {
   return (
     <Router >
       <div className="App">
-            <Routes>
-              <Route path='/' element={<>
-              <Navbar onScrollTo={onScrollTo}/>
-                <div className="PageContainer">
-                  <Home onScrollTo={onScrollTo}/>
-                  <TechStack/>
-                  <Portfolio/>
-                  <About/>
-                  <Contact />
-                </div></>
-              }/>
-              <Route path='/gallery' element={<EyeOfOphidiaGallery page={true} />}/>
-            </Routes>
+        <Routes>
+          <Route path='/' element={<>
+          <Navbar onScrollTo={onScrollTo}/>
+            <div className="PageContainer">
+              <Home onScrollTo={onScrollTo}/>
+              <About/>
+              <TechStack/>
+              <Portfolio/>
+              <Contact />
+            </div></>
+          }/>
+          <Route path='/gallery' element={<EyeOfOphidiaGallery page={true} />}/>
+          <Route path='/resume' element={<Resume />}/>
+        </Routes>
       </div>
     </Router>
   );

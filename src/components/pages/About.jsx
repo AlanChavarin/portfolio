@@ -11,9 +11,10 @@ function About() {
         </div>
         <div className={AboutCSS.aboutMe}>
           <h1 className={AboutCSS.header1}>{'< '}About me{' />'}</h1>
-          <p>I am 22 years old and currently pursuing a Computer Science degree at San Diego State University. I am planning on completing my degree in the spring of 2025.</p>
-          <p>In addition to my classes, I study and improve my web development skills during my free time by working on my portfolio projects. </p>
-          <p>Currently, I am looking for a web development internship to gain real world experience in the industry.</p>
+          <p>I am a Computer Science Major San Diego State University. I am planning on completing my degree in the spring of 2025.</p>
+          <p>In addition to my classes, I study and improve my web development skills building tools for the web that people find useful.</p>
+          <p>I am currently open to web development internship opportunities in order to gain real world experience working in a professional environment .
+          </p>
         </div>
         
         {/* <OrangeBorders /> */}
