@@ -68,6 +68,12 @@ span{
   transform: translateY(128px);
 }
 
+@media(width < 500px){
+  .PageContainer{
+    margin-top: 40px;
+  }
+}
+
 @media(width < 410px){
   .translateY{
     transform: translateY(64px);
