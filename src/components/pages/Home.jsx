@@ -9,7 +9,12 @@ function Home({onScrollTo}) {
         <b>Hello!</b> I'm <br className={HomeCSS.nameBreak}/>
         <b className={HomeCSS.highlight}> Alan Chavarin</b>
       </h1>
-      <p className={HomeCSS.p}><b className={HomeCSS.highlight}>Full stack</b> web developer based out of San Diego, California.</p>
+      <p className={HomeCSS.p}>
+        <b className={HomeCSS.highlight}>Full stack</b> web developer based out of San Diego, California.
+      </p>
+      <p className={HomeCSS.p2}>
+        I'm currently open to <b className={HomeCSS.highlight}>internship</b> opportunities. 
+      </p>
       <div className={HomeCSS.logoContainer}>
         <img src="HTML5.png" alt="HTML 5" width='70'/>
         <img src="css.png" alt="CSS" width='80' />
