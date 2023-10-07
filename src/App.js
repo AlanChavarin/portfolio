@@ -29,8 +29,8 @@ function App() {
             <div className="PageContainer">
               <Home onScrollTo={onScrollTo}/>
               <About/>
-              <TechStack/>
               <Portfolio/>
+              <TechStack/>
               <Contact />
             </div></>
           }/>
