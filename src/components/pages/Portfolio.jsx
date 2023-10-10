@@ -26,7 +26,7 @@ function Portfolio() {
                         This is a fullstack tool was built using the <span>M.E.R.N. stack</span> (Mongodb, Express, Node, React). It is currently deployed using Railway.
                     </p>
                     <p className={PortfolioCSS.text}>
-                        <a href="https://www.eyeofophidia.net" target="blank" className={PortfolioCSS.a}>Eyeofophidia.net</a> has had over 3900+ unique visitors from over 20+ different countries around the world according to my Google Analytics page. Players of the card game have found the site tremendously useful especially right after large tournaments.
+                        <a href="https://www.eyeofophidia.net" target="blank" className={PortfolioCSS.a}>Eyeofophidia.net</a> has had over 4100 unique visitors from over 59 different countries around the world. Players of the card game have found the site tremendously useful especially right after large tournaments.
                     </p>
                     
                     <p className={PortfolioCSS.linkContainer}>
