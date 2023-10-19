@@ -70,7 +70,7 @@ function Navbar({onScrollTo}) {
           Resume <FontAwesomeIcon icon={faLink} className={NavbarCSS.linkIcon}/>
         </button>
         <div className={NavbarCSS.filler}></div>
-        <a href="https://www.linkedin.com/in/alan-chavarin-5bb910248/" target="blank">
+        <a href="https://www.linkedin.com/in/alanchavarin/" target="blank">
           <FontAwesomeIcon icon={faLinkedin} className={NavbarCSS.icon}/>
         </a>
         <a href="https://github.com/AlanChavarin" target="blank">

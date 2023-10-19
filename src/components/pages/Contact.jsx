@@ -7,11 +7,11 @@ function Contact() {
             <h1 className={ContactCSS.h1} style={{textAlign: 'center'}}>{"<"} Contact me {"/>"}</h1>
             <p className={ContactCSS.p}>
                 Feel free to also contact me directly at: <span> </span>
-                <a href="mailto: alanchavarin4@hotmail.com">
-                     alanchavarin4@hotmail.com
+                <a href="mailto: AlanChavarin@outlook.com">
+                     AlanChavarin@outlook.com
                 </a>
             </p>
-            <form method="POST" id='contact' className={ContactCSS.form} action="https://formsubmit.co/alanchavarin4@hotmail.com" >
+            <form method="POST" id='contact' className={ContactCSS.form} action="https://formsubmit.co/alanchavarin@outlook.com" >
                 <div>
                     <label htmlFor="name">Name</label>
                     <input type="text" name="name" placeholder='John Smith'/>
