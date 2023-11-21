@@ -7,8 +7,8 @@ function Contact() {
             <h1 className={ContactCSS.h1} style={{textAlign: 'center'}}>{"<"} Contact me {"/>"}</h1>
             <p className={ContactCSS.p}>
                 Feel free to also contact me directly at: <span> </span>
-                <a href="mailto: AlanChavarin@outlook.com">
-                     AlanChavarin@outlook.com
+                <a href="mailto: alanchavarin@outlook.com">
+                     alanchavarin@outlook.com
                 </a>
             </p>
             <form method="POST" id='contact' className={ContactCSS.form} action="https://formsubmit.co/alanchavarin@outlook.com" >
