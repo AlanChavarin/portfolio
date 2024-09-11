@@ -4,40 +4,7 @@ import EyeOfOphidiaGalleryCSS from './styles/EyeOfOphidiaGallery.module.css'
 import { useState, useEffect } from "react"
 import { useNavigate, useSearchParams } from "react-router-dom"
 
-const imageArray = [
-    'homepage.PNG',
-    'analytics.PNG',
-    'resultspage.PNG',
-    'Matchpage.PNG', 
-    'eventpage.PNG',
-    '1eventpage.PNG',
-    'parameters.PNG',
-    'issuespage.PNG',
-    'postmatchpage.PNG',
-    'register.PNG', 
-    'homepagemobile.PNG',
-    'matchpagemobile.PNG',
-    'parametersmobile.PNG',
-    'searchresultsmobile.PNG',
-  ]
-  const imageDescriptionArray = [
-    'Home Page',
-    'Google Analytics for eyeofophidia.net',
-    'Match Search Results',
-    'Match Page',
-    'Events page',
-    'Event page',
-    'Search Parameters Dropdown',
-    'Issues Page (Admin only)',
-    'Match Submission Page (Admin only)',
-    'Login/Registration page',
-    'Home Page (Mobile)',
-    'Match Page (Mobile)',
-    'Parameters Dropdown (Mobile)',
-    'Match Search Resuts (Mobile)',
-  ]
-
-function EyeOfOphidiaGallery({page}) {
+function EyeOfOphidiaGallery({page, imageArray, imageDescriptionArray, galleryName}) {
   const [searchParams] = useSearchParams()
   const [imageIndex, setImageIndex] = useState(
     searchParams.get('pic') ? parseInt(searchParams.get('pic')) : 0
@@ -56,7 +23,7 @@ function EyeOfOphidiaGallery({page}) {
 
   const onClick = () => {
     if(!page){
-      navigate(`/gallery?pic=${imageIndex}`)
+      navigate(`/${galleryName}?pic=${imageIndex}`)
     } else if(page){
       window.history.back()
     }

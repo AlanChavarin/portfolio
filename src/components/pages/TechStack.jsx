@@ -16,6 +16,21 @@ function TechStack() {
                             <div>Javascript Framework</div>
                         </div>
                     </div>
+                    <div>
+                        <img src="next-js.svg" alt="" className={TechStackCSS.img}/>
+                        <div className={TechStackCSS.nameDesc}>
+                            <div>NextJS</div>
+                            <div>React Meta Framework</div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <img src="Typescript_logo_2020.svg.png" alt="" className={TechStackCSS.img}/>
+                        <div className={TechStackCSS.nameDesc}>
+                            <div>Typescript</div>
+                            <div>Front End Language</div>
+                        </div>
+                    </div>
 
                     <div>
                         <img src="JavaScript.png" alt="" className={TechStackCSS.img}/>
@@ -70,9 +85,16 @@ function TechStack() {
                             <div>Document-oriented database</div>
                         </div>
                     </div>
+                    <div>
+                        <img src="Postgresql_elephant.svg.png" alt="" className={TechStackCSS.img}/>
+                        <div className={TechStackCSS.nameDesc}>
+                            <div>Postgresql</div>
+                            <div>Document-oriented database</div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div className={TechStackCSS.stack}>
+            {/* <div className={TechStackCSS.stack}>
                 <div>
                     <h2 className={TechStackCSS.h2}>{'< '}Testing{' />'}</h2>
                 </div>
@@ -93,7 +115,7 @@ function TechStack() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </section>
     </div>
     
